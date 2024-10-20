@@ -1433,10 +1433,19 @@ importers:
 
   references/hello-world:
     dependencies:
+      '@aws-sdk/client-s3':
+        specifier: ^3.675.0
+        version: 3.675.0
       '@trigger.dev/sdk':
         specifier: workspace:*
         version: link:../../packages/trigger-sdk
+      libreoffice-convert:
+        specifier: ^1.6.0
+        version: 1.6.0
     devDependencies:
+      '@trigger.dev/build':
+        specifier: workspace:*
+        version: link:../../packages/build
       trigger.dev:
         specifier: workspace:*
         version: link:../../packages/cli-v3

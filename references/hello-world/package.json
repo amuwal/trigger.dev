@@ -3,10 +3,13 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@trigger.dev/build": "workspace:*",
     "trigger.dev": "workspace:*",
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@trigger.dev/sdk": "workspace:*"
+    "@aws-sdk/client-s3": "^3.675.0",
+    "@trigger.dev/sdk": "workspace:*",
+    "libreoffice-convert": "^1.6.0"
   }
 }

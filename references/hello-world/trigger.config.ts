@@ -1,4 +1,5 @@
 import { defineConfig } from "@trigger.dev/sdk/v3";
+import { libreoffice } from "@trigger.dev/build/extensions/libreoffice";
 
 export default defineConfig({
   project: "proj_rrkpdguyagvsoktglnod",
@@ -13,5 +14,8 @@ export default defineConfig({
       factor: 2,
       randomize: true,
     },
+  },
+  build: {
+    extensions: [libreoffice()],
   },
 });
